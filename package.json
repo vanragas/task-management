@@ -1,7 +1,7 @@
 {
   "name": "task-management",
   "version": "1.0.0",
-  "description": "Daily Task Management API",
+  "description": "Task Management API",
   "main": "app.js",
   "scripts": {
     "start": "nodemon server.js",

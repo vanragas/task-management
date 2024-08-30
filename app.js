@@ -8,6 +8,7 @@ const userRoutes = require('./routes/userRoutes');
 
 const app = express();
 
+//morgan for dev
 if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 
 app.use(express.json({ limit: '10kb' }));

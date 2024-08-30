@@ -28,7 +28,7 @@ exports.getAllTasks = catchAsync(async (req, res) => {
 exports.getTask = catchAsync(async (req, res, next) => {
   const task = await Task.findById(req.params.id);
 
-  if (!task) return next(new AppError('No task found with that ID.', 404));
+  if (!task) return next(new AppError('No task found with that ID!', 404));
 
   res.status(200).json({
     status: 'success',
